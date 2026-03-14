@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://alexudm.github.io
+Sitemap: https://alexudm.github.io/ecocycle/
