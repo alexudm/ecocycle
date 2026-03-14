@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://xn----7sbbf2b7bj7b.com
+
+Sitemap: https://alexudm.github.io
