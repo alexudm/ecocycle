@@ -1,0 +1,172 @@
+/* ПЕРЕМЕННЫЕ И БАЗОВЫЕ НАСТРОЙКИ */
+:root {
+    --primary: #2ecc71; 
+    --accent: #3498db; 
+    --bg: #0b0d0d;
+    --card: #161a1a;
+    --text: #e0e0e0;
+}
+
+body { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    margin: 0; 
+    background: var(--bg); 
+    color: var(--text); 
+    line-height: 1.6; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    overflow-x: hidden;
+}
+
+.container { 
+    max-width: 1000px; 
+    width: 100%; 
+    padding: 40px 20px; 
+    text-align: center; 
+    box-sizing: border-box; 
+}
+
+/* СТРУКТУРА КЛАСТЕРА (УЗЛЫ И ЛИНИИ) */
+.node { 
+    background: var(--card); 
+    border: 2px solid #333; 
+    border-radius: 15px; 
+    padding: 25px; 
+    margin: 0 auto; 
+    width: 100%; 
+    box-sizing: border-box; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.line { 
+    width: 2px; 
+    height: 40px; 
+    background: var(--primary); 
+    margin: 0 auto; 
+}
+
+.branch-container { 
+    display: flex; 
+    justify-content: center; 
+    gap: 30px; 
+    margin-top: 20px; 
+    flex-wrap: wrap; 
+}
+
+/* КНОПКИ И ССЫЛКИ */
+.btn-more { 
+    display: inline-block; 
+    margin-top: 15px; 
+    padding: 10px 25px; 
+    border: 1px solid var(--primary); 
+    color: var(--primary); 
+    text-decoration: none; 
+    border-radius: 5px; 
+    transition: 0.3s; 
+    font-weight: 600; 
+}
+
+.btn-more:hover { 
+    background: var(--primary); 
+    color: #000; 
+    transform: translateY(-2px);
+}
+
+.back-link { 
+    display: inline-block; 
+    color: var(--primary); 
+    text-decoration: none; 
+    border: 1px solid var(--primary); 
+    padding: 8px 20px; 
+    border-radius: 20px; 
+    margin-bottom: 30px; 
+    transition: 0.3s; 
+}
+
+.back-link:hover { 
+    background: var(--primary); 
+    color: var(--bg); 
+    transform: translateX(-5px); 
+}
+
+/* КАРТОЧКИ И СПИСКИ ТЕХНОЛОГИЙ */
+.card { 
+    background: rgba(255,255,255,0.02); 
+    border-radius: 12px; 
+    padding: 25px; 
+    margin-top: 20px; 
+    border: 1px solid rgba(255,255,255,0.05); 
+}
+
+.spec-list { list-style: none; padding: 0; margin: 0; }
+.spec-list li { 
+    border-bottom: 1px solid #222; 
+    padding: 12px 0; 
+    display: flex; 
+    justify-content: space-between; 
+    gap: 15px; 
+    align-items: center; 
+}
+.spec-list li b { color: var(--primary); }
+
+/* ИЗОБРАЖЕНИЯ */
+.img-placeholder { 
+    background: #222; 
+    border-radius: 12px; 
+    width: 100%; 
+    min-height: 250px; 
+    margin: 25px 0; 
+    overflow: hidden; 
+    border: 1px solid #333; 
+}
+
+.img-placeholder img { 
+    width: 100%; 
+    height: auto; 
+    display: block; 
+    transition: transform 0.5s ease;
+}
+
+.img-placeholder:hover img { transform: scale(1.03); }
+
+/* --- БЛОК АНИМАЦИЙ (ДЛЯ JAVASCRIPT) --- */
+
+/* Начальное состояние для появления */
+.reveal, .fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Состояние при активации */
+.reveal.active, .fade-in-up.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Пульсация завода (Главная) */
+.node-main {
+    box-shadow: 0 0 0 rgba(46, 204, 113, 0.4);
+    animation: pulse 2.5s infinite;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(46, 204, 113, 0.4); }
+    70% { box-shadow: 0 0 0 20px rgba(46, 204, 113, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(46, 204, 113, 0); }
+}
+
+/* Свечение для Рыбы (fish.html) */
+.fish-accent.active {
+    box-shadow: 0 10px 40px rgba(52, 152, 219, 0.15);
+}
+
+/* --- АДАПТИВНОСТЬ (МОБИЛЬНЫЕ УСТРОЙСТВА) --- */
+@media (max-width: 768px) {
+    .container { padding: 20px 15px; }
+    .branch-container { flex-direction: column; gap: 20px; }
+    .node { padding: 20px; max-width: 100% !important; }
+    .btn-more, .back-link { width: 100%; box-sizing: border-box; text-align: center; }
+    .spec-list li { flex-direction: column; text-align: center; gap: 5px; }
+}
