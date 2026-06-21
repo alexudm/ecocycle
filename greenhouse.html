@@ -2,21 +2,23 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Тепличный комплекс | EcoCycle Агро</title>
-    <meta name="description" content="50 Гектаров теплиц пятого поколения. Нулевые затраты на тепло благодаря интеграции с заводом.">
+    <meta name="description" content="50 гектаров теплиц пятого поколения. Нулевые затраты на тепло благодаря интеграции с заводом.">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container" style="text-align: left;">
+    <main class="container page-detail">
         <a href="index.html" class="back-link">← Вернуться к структуре</a>
-        
-        <div class="node" style="border-color: var(--primary);">
-            <h1>Высокотехнологичный тепличный комплекс</h1>
+
+        <article class="node theme-plant">
+            <h1 class="page-title">Высокотехнологичный тепличный комплекс</h1>
             <div class="img-placeholder">
-                <img src="greenhouse_view.webp" alt="Тепличный комплекс">
+                <img src="greenhouse_view.webp" alt="Панорамный вид тепличного комплекса площадью 50 гектаров с модульной структурой" loading="lazy">
             </div>
 
-            <div class="card" style="background: rgba(46, 204, 113, 0.05);">
+            <div class="card card-highlight">
                 <h3>Энергообеспечение (на 1 модуль):</h3>
                 <ul class="spec-list">
                     <li>Тепло: <b>3 500 000 kcal (от завода)</b></li>
@@ -25,23 +27,21 @@
                 </ul>
             </div>
 
-            <h3>Прогноз урожайности (в год):</h3>
+            <h3 class="section-title">Прогноз урожайности (в год):</h3>
             <div class="branch-container">
-                <div class="card" style="flex: 1; min-width: 200px; border-top: 3px solid var(--primary);">
+                <div class="card card-stat">
                     <h4>Томаты: 750 т/га</h4>
                 </div>
-                <div class="card" style="flex: 1; min-width: 200px; border-top: 3px solid var(--primary);">
+                <div class="card card-stat">
                     <h4>Огурцы: 1.8 млн шт</h4>
                 </div>
             </div>
 
-            <div class="img-placeholder" style="margin-top: 30px;">
-                <img src="strawberry_tech.webp" alt="Вертикальная гидропоника">
+            <div class="img-placeholder img-placeholder-spaced">
+                <img src="strawberry_tech.webp" alt="Многоярусная гидропонная система выращивания клубники в тепличном модуле" loading="lazy">
             </div>
-        </div>
-    </div>
-	<script src="script.js"></script>
-
-
+        </article>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>

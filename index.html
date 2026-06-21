@@ -5,61 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EcoCycle | Промышленный Био-Кластер</title>
     <meta name="description" content="Инновационная экосистема: завод метанизации ТБО, тепличный комплекс и осетровая ферма. Энергоэффективные технологии будущего.">
-    
-    <!-- Open Graph для мессенджеров -->
+
     <meta property="og:title" content="EcoCycle | Био-Кластер будущего">
     <meta property="og:description" content="Комплекс переработки отходов в энергию и продукты питания.">
-    <meta property="og:image" content="plant_reactors.wbp">
-    
+    <meta property="og:image" content="plant_reactors.webp">
+
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1 style="color: var(--primary); margin-bottom: 40px;" class="reveal">Промышленный Био-Кластер</h1>
+    <header class="site-header">
+        <nav class="lang-switch" aria-label="Выбор языка">
+            <a href="index.html" class="active">RU</a>
+            <span class="lang-soon" aria-disabled="true" title="Скоро">EN</span>
+        </nav>
+    </header>
 
-        <!-- ЗАВОД (ГЛАВНЫЙ УЗЕЛ) -->
-        <div class="node node-main" style="border-color: var(--primary); border-width: 3px; position: relative;">
-            <div style="position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: var(--bg); padding: 0 10px;">
-                <small style="color: var(--primary); font-weight: bold; letter-spacing: 1px;">ГОЛОВНОЕ ПРЕДПРИЯТИЕ</small>
+    <main class="container">
+        <h1 class="page-title reveal">Промышленный Био-Кластер</h1>
+        <p class="page-intro reveal">Замкнутый био-кластер: отходы перерабатываются в энергию и тепло на заводе метанизации, питают тепличный комплекс и обеспечивают стабильную среду для промышленной аквакультуры.</p>
+
+        <figure class="cluster-diagram reveal">
+            <img src="layout_model.webp" alt="Схема био-кластера: завод метанизации, тепличный комплекс и осетровая ферма в единой экосистеме" loading="lazy">
+        </figure>
+
+        <div class="node node-main theme-plant reveal">
+            <div class="node-badge">
+                <small>ГОЛОВНОЕ ПРЕДПРИЯТИЕ</small>
             </div>
             <h2>Завод Метанизации ТБО</h2>
-            <p>Генерация энергии и тепла (300 000 тонн/год)</p>
+            <p>Генерация энергии и тепла (300 000 т/год)</p>
             <a href="plant.html" class="btn-more">Подробнее и схемы</a>
         </div>
 
-        <div class="line"></div>
+        <div class="line reveal"></div>
 
-        <!-- ВЕТКИ (ТЕПЛИЦА И РЫБА) -->
         <div class="branch-container">
-            <!-- ТЕПЛИЦА (ТЕПЕРЬ С ОКАНТОВКОЙ) -->
-            <div class="node" style="max-width: 450px; border-color: var(--primary); border-width: 2px;">
-                <h3 style="color: var(--primary);">Тепличный комплекс</h3>
+            <div class="node node-branch theme-plant reveal">
+                <h3>Тепличный комплекс</h3>
                 <p>50 Га / 25 производственных модулей</p>
                 <a href="greenhouse.html" class="btn-more">Подробнее</a>
             </div>
 
-            <!-- РЫБА -->
-            <div class="node" style="max-width: 450px; border-color: var(--accent); border-width: 2px;">
-                <h3 style="color: var(--accent);">Осетровая ферма</h3>
-                <p>120 тонн в год / Система УЗВ</p>
-                <a href="fish.html" class="btn-more" style="border-color: var(--accent); color: var(--accent);">Подробнее</a>
+            <div class="node node-branch theme-fish reveal">
+                <h3>Осетровая ферма</h3>
+                <p>120 т/год / Система УЗВ</p>
+                <a href="fish.html" class="btn-more btn-accent">Подробнее</a>
             </div>
         </div>
+    </main>
 
-        <!-- КОНТАКТЫ -->
-        <div id="contacts" style="margin-top: 80px; padding-top: 40px; border-top: 1px dashed #333; width: 100%;" class="...">
-            <h2 style="color: var(--primary); margin-bottom: 20px;">Связаться с нами</h2>
-            <div style="display: flex; flex-direction: column; align-items: center; gap: 15px;">
-                <a href="mailto:info@ecocycle.kz" style="color: var(--text); text-decoration: none; font-size: 1.3rem; border-bottom: 1px solid var(--primary); transition: 0.3s;">info@ecocycle.kz</a>
-                <a href="tel:+77770000000" style="color: var(--text); text-decoration: none; font-size: 1.1rem; opacity: 0.7;">+7 (777) 000-00-00</a>
-            </div>
-            <p style="margin-top: 60px; font-size: 0.75rem; color: #444; letter-spacing: 2px; text-transform: uppercase;">© 2026 EcoCycle Industrial Cluster</p>
+    <footer id="contacts" class="container contacts reveal">
+        <h2>Связаться с нами</h2>
+        <div class="contact-links">
+            <a href="mailto:info@ecocycle.kz" class="contact-link contact-link-email">info@ecocycle.kz</a>
+            <a href="tel:+77770000000" class="contact-link contact-link-phone">+7 (777) 000-00-00</a>
         </div>
-    </div>
+        <p class="footer-copy">© 2026 EcoCycle Industrial Cluster</p>
+    </footer>
 
-    <!-- JAVASCRIPT ДЛЯ АНИМАЦИИ -->
-   <script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>

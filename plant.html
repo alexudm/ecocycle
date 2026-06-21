@@ -2,20 +2,22 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Завод Метанизации | Технологии EcoCycle</title>
     <meta name="description" content="Переработка ТБО в биогаз и электроэнергию за 15 дней. Герметичная технология без запаха и шума.">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container" style="text-align: left;">
+    <main class="container page-detail">
         <a href="index.html" class="back-link">← Вернуться к структуре</a>
-        
-        <div class="node" style="border-color: var(--primary);">
-            <h1 style="color: var(--primary);">Завод по переработке и утилизации ТБО</h1>
-            <p>Центральное ядро кластера. Мощность: 300 000 тонн отходов в год.</p>
-            
+
+        <article class="node theme-plant">
+            <h1 class="page-title">Завод по переработке и утилизации ТБО</h1>
+            <p>Центральное ядро кластера. Мощность: 300 000 т/год.</p>
+
             <div class="img-placeholder">
-                <img src="plant_reactors.webp" alt="Комплекс биореакторов">
+                <img src="plant_reactors.webp" alt="Промышленный комплекс герметичных биореакторов для анаэробной переработки ТБО" loading="lazy">
             </div>
 
             <div class="card">
@@ -28,11 +30,11 @@
                 </ul>
             </div>
 
-            <div class="img-placeholder" style="min-height: 200px;">
-                <img src="cogen_engine.webp" alt="Система когенерации">
+            <div class="img-placeholder img-placeholder-compact">
+                <img src="cogen_engine.webp" alt="Когенерационная установка для выработки электроэнергии и тепла из биогаза" loading="lazy">
             </div>
 
-            <div class="card" style="border-color: var(--primary);">
+            <div class="card card-accent-border">
                 <h3>Экономическая эффективность</h3>
                 <ul class="spec-list">
                     <li>Энергия: <b>Полная автономия кластера</b></li>
@@ -41,15 +43,12 @@
                 </ul>
             </div>
 
-            <h3 style="margin-top: 40px; color: var(--primary);">Технологическая схема потоков</h3>
-            <div class="card" style="background: #fff; padding: 10px;">
-                <img src="flow_scheme.webp" alt="Схема потоков" style="width: 100%;">
+            <h3 class="section-title">Технологическая схема потоков</h3>
+            <div class="card card-scheme">
+                <img src="flow_scheme.webp" alt="Технологическая схема потоков: от приема ТБО до выработки биогаза, электроэнергии и биогумуса" loading="lazy">
             </div>
-        </div>
-    </div>
-	  <script src="script.js"></script>
-
-</body>
-
+        </article>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
