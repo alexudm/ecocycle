@@ -66,18 +66,6 @@ body {
     opacity: 1;
 }
 
-.lang-switch .lang-soon {
-    padding: 6px 12px;
-    min-height: 44px;
-    box-sizing: border-box;
-    display: inline-flex;
-    align-items: center;
-    border-radius: 999px;
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    opacity: 0.45;
-    cursor: not-allowed;
-}
-
 .lang-switch a:focus-visible {
     outline: 2px solid var(--primary);
     outline-offset: 2px;
@@ -96,9 +84,24 @@ body {
 }
 
 /* ТИПОГРАФИКА */
+.brand {
+    margin: 0 0 10px;
+    font-size: clamp(2.2rem, 6vw, 3.4rem);
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: var(--text);
+    line-height: 1.1;
+}
+
 .page-title {
     color: var(--primary);
     margin-bottom: 20px;
+}
+
+.brand + .page-title {
+    margin-top: 0;
+    font-size: clamp(1.35rem, 3.2vw, 1.85rem);
+    font-weight: 600;
 }
 
 .page-intro {
@@ -428,7 +431,8 @@ body {
 
 /* АНИМАЦИИ */
 .reveal,
-.fade-in-up {
+.fade-in-up,
+.brand.reveal {
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1),
@@ -481,6 +485,10 @@ body {
 
     .page-title {
         margin-bottom: 16px;
+        padding-right: 80px;
+    }
+
+    .brand {
         padding-right: 80px;
     }
 

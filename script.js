@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const revealSelectors = ".reveal, .node, .line, .card, .img-placeholder, .page-title, .page-intro, .cluster-diagram";
+    const revealSelectors = ".reveal, .brand, .node, .line, .card, .img-placeholder, .page-title, .page-intro, .cluster-diagram";
     const elements = document.querySelectorAll(revealSelectors);
 
     elements.forEach((el) => {
