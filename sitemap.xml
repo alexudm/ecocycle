@@ -1,23 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Главная страница -->
+  <!-- RU: Главная -->
   <url>
     <loc>https://alexudm.github.io/ecocycle/</loc>
     <priority>1.0</priority>
   </url>
-  <!-- Завод -->
+  <!-- RU: Завод -->
   <url>
     <loc>https://alexudm.github.io/ecocycle/plant.html</loc>
     <priority>0.8</priority>
   </url>
-  <!-- Теплицы -->
+  <!-- RU: Теплицы -->
   <url>
     <loc>https://alexudm.github.io/ecocycle/greenhouse.html</loc>
     <priority>0.8</priority>
   </url>
-  <!-- Рыба -->
+  <!-- RU: Рыба -->
   <url>
     <loc>https://alexudm.github.io/ecocycle/fish.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <!-- EN: Home -->
+  <url>
+    <loc>https://alexudm.github.io/ecocycle/en/</loc>
+    <priority>1.0</priority>
+  </url>
+  <!-- EN: Plant -->
+  <url>
+    <loc>https://alexudm.github.io/ecocycle/en/plant.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <!-- EN: Greenhouse -->
+  <url>
+    <loc>https://alexudm.github.io/ecocycle/en/greenhouse.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <!-- EN: Fish -->
+  <url>
+    <loc>https://alexudm.github.io/ecocycle/en/fish.html</loc>
     <priority>0.8</priority>
   </url>
 </urlset>
